@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commands</title>
+  <link rel="icon" href="../danime.png">
+  <link rel="stylesheet" href="commands.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loaderFunction()">
+
+  <div id="loader">
+    <div class="loading">
+      <span></span>
+    </div>
+  </div>
+
+
+  <div id="page">
+    <nav>
+      <div class="logo noselect">
+        <img class="noselect" src="../danime.png">NexiBot Official</div>
+
+      <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu noselect">
+        <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a class="active" href="#"><i class="far fa-list-alt"></i> Commands</a></li>
+        <li><a href="../pages/about.html"><i class="fas fa-quote-left"></i> About</a></li>
+        <li><a href="../pages/support.html" target="_none"><i class="fas fa-headset"></i> Support</a></li>
+        <li><a class="invite noselect" href="https://discord.com/oauth2/authorize?client_id=1242479315241795696&permissions=8&scope=bot" target="_none"><i
+              class="fab fa-discord"></i> Add to server</a></li>
+        <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+      </ul>
+    </nav>
+
+
+
+    <div class="container clear noselect">
+      <div class="row wrapper">
+
+        <span class="collapse" onclick="closeSidePanel()"><i class="fas fa-caret-left"></i></span>
+        <span class="expand" onclick="openSidePanel()"><i class="fas fa-caret-right"></i></span>
+
+        <div class="sidepanel">
+          <div class="divider left"></div>
+
+          <a class="title" href="#introduction">Introduction</a>
+
+          <a class="section" href="#aboutthisbot">About this Bot</a>
+          <a class="section" href="#technology">Technology</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#gettingstarted">Getting Started</a>
+
+          <a class="section" href="#inbothelp">In-Bot Help</a>
+          <a class="section" href="#addingthebot">Adding the Bot</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#commands">Commands</a>
+
+          <a class="section" href="#anime">Music</a>
+          <a class="section" href="#Games">Games</a>
+          <a class="section" href="#Ai">Ai</a>
+
+
+          <div class="divider left"></div>
+
+
+
+          <div class="space double"></div>
+
+        </div>
+
+        <div class="right-col">
+          <h1 id="introduction">Introduction</h1>
+
+          <p id="aboutthisbot">NexiBot is a name that combines "Nexi," derived from the word "nexus," which means a connection or series of connections linking two or more things, with "Bot," short for robot. The name conveys a sense of futuristic technology and connectivity, suggesting that this bot is advanced, efficient, and central to the interactions within your Discord server.</p>
+
+          <h2>About this Bot</h2>
+
+          <p id="technology">The bot is both efficient and effective. The bot is
+            hosted 24/7 and you can be reassured about it's uptime.</p>
+
+          <h2>Technology</h2>
+
+          <p id="gettingstarted">The bot is bulit with python using the discord.py library, same with the API the bot
+            uses.<br><br>
+            The bot uses it's own API to filter. With the help of our super fast and flexible API we are able to provide you the best and fastest features.</p>
+
+          <div class="divider" style="width:40%; margin:30px 0;"></div>
+
+          <h1>Getting Started</h1>
+
+          <p id="inbothelp">To get started with our bot is fairly easy and we have done our best to make it simpler for
+            you.</p>
+
+          <h1>In-bot help</h1>
+
+          <p>There is also a in-bot gettingstarted command that you can use if you know the installation process.<br>
+            You also have the option to get help on all the bot commands right through discord with the use of the
+            bot's internal help command.</p>
+
+
+          <h2>Adding the bot</h2>
+
+          <p id="commands">To add the bot to your server <a href="https://discord.com/oauth2/authorize?client_id=1242479315241795696&permissions=8&scope=bot" target="_none">click
+              here.</a><br><br>This does needs you to either be the owner of the server or have "administrator"
+            permissions.</p>
+
+
+          <div  class="divider" style="width:40%; margin:30px 0;"></div>
+
+
+          <h1 >Commands</h1>
+          <div id="anime">Syntax:
+            <ul >
+              <li><span class="codeBlock">/</span> Slash Commands </li>
+            </ul >
+          </div>
+
+          <h2>Music</h2>
+          <div>
+            <ul>
+              <li class="collapsible">Playing A Song</li>
+              <div class="cmdCollapse">
+                Description : Let's you play any music(on youtube) with the help of yt_dlp module.
+                <br>
+                Usage : <span class="codeBlock">/play_song < A Url From Youtube> </span>
+                <br>
+                Example : <span class="codeBlock">/play_song https://youtu.be/uGcsIdGOuZY?si=WZJgb4qaC-y7E2JE </span>
+                <br>
+                Note : The bot will only play if the url is from youtube and you need to be in a voice channel to make it work.
+              </div>
+              <li class="collapsible">Pausing The Song</li>
+              <div class="cmdCollapse">
+                Description : Let's you pause the song playing.
+                <br>
+                Usage : <span class="codeBlock">/pause</span>
+                <br>
+                Example : <span class="codeBlock">/pause</span>
+                <br>
+                Note : You need to play a song to stop it.
+              </div>
+              <li class="collapsible">Resumes the Song</li>
+              <div class="cmdCollapse">
+                Description : Let's you resumes the song.
+                <br>
+                Usage : <span class="codeBlock">/resume</span>
+                <br>
+                Example : <span class="codeBlock">/resume</span>
+                <br id = "Games">
+                Note : You need to stop a song to resume it.
+              </div>
+              <li class="collapsible">Stops the Song</li>
+              <div class="cmdCollapse">
+                Description : Let's you stop the playing song.
+                <br>
+                Usage : <span class="codeBlock">/stop </span>
+                <br >
+            
+                Example : <span class="codeBlock">/stop</span>
+                <br>
+                Note :There should be a song playing to stop it.
+              </div>
+              
+            </ul>
+          </div>
+          
+          <div id="" class="divider" style="width:24%; margin:30px 0;"></div>
+          <h2>Games</h2>
+          <div>
+            <ul>
+              <li class="collapsible">Playing Tic Tac Toe</li>
+              <div class="cmdCollapse">
+                Description : Let's you play Tic Tac Toe.
+                <br>
+                Usage : <span class="codeBlock">/play_tic </span>
+                <br>
+                Example : <span class="codeBlock">/play_tic </span>                
+              </div>
+              <li class="collapsible">Playing Tetris</li>
+              <div class="cmdCollapse">
+                Description : Let's you play Tetris in Discord.
+                <br >
+                Usage : <span class="codeBlock">/play_tetris</span>
+                <br>
+                Example : <span class="codeBlock">/play_tetris</span>
+              </div>
+              <li class="collapsible">Playing A Match Of Chess</li>
+              <div class="cmdCollapse">
+                Description : Let's you play a match of Chess.
+                <br>
+                Usage : <span class="codeBlock">/play_chess player1 player2</span>
+                <br>
+                Placing pieces : <span class="codeBlock">/chess_place < place of the piece you want to move > < place of the piece you want to have ></span>
+                <br>
+                Example : <span class="codeBlock">/play_chess @Coolboss @anik5108</span>
+                <br>
+              </div>
+              <li class="collapsible">Link To Our Game On Roblox</li>
+              <div class="cmdCollapse">
+                Description : Links Our Game On Roblox.
+                <br>
+                Usage : <span class="codeBlock">/play_game </span>
+                <br id = "Ai">
+                Example : <span class="codeBlock">/play_game</span>
+                <br>
+                Note :You need a Roblox Account to play this game(It is Free) its trailer is embeded below.
+              </div>
+
+            </ul>
+          </div>
+          <div id="" class="divider" style="width:24%; margin:30px 0;"></div>
+          <h2>AI</h2>
+          <ul>
+            <li>About Ai</li>
+            <div>
+              We utilize an advanced AI tool called Ollama to run modified versions of existing language models. 
+              <br>
+              These models can solve homework questions and address basic queries for 12th-grade students, primarily in commerce and arts.
+              <br>
+              We have also utilized the AI model from LLAVA to enable image-to-text conversion.
+            </div>
+            <h2>Commands</h2>
+            <br>
+
+            <li class="collapsible">Chatting with the Ai Model</li>
+            <div class="cmdCollapse">
+              Description : Let's you Chat with Ai.
+              <br>
+              Usage : <span class="codeBlock">/chat < Chat > < Model Name  ></span>
+              <br>
+              Example : <span class="codeBlock">/chat < What is Opportunity Cost> < llama3:8b></span>
+              <br>
+            </div>
+
+            <li class="collapsible">Image to Text</li>
+            <div class="cmdCollapse">
+              Description : Let's you Convert a image to text.
+              <br>
+              Usage : <span class="codeBlock">/image-to-text < image ></span>
+              <br>
+              Example : <span class="codeBlock">/chat < image.png> </span>
+              <br>
+            </div>
+          </ul>
+          <div  class="divider" style="width:40%; margin:30px 0;"></div>
+            
+            
+
+
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+        if(disclaimer) {
+            disclaimer.remove();
+        }
+    });
+</script>
+
+  <script src="../index.js"></script>
+  <script src="./commands.js"></script>
+</body>
+
+</html>
